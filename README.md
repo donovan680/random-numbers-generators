@@ -6,9 +6,9 @@ Random number distributions (e.g. uniform, normal, or poisson distributions) whi
 
      Example :
      
-#include <iostream>
+#include <<iostream>>
     
-#include <iomanip>
+#include <<iomanip>>
     
 #include <string>
     
