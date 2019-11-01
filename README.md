@@ -1,16 +1,17 @@
 # random-numbers-generators
 Pseudo-random number generators (PRNG), which generate numbers that look random, but are actually deterministic, and can be reproduced if the state of the PRNG is known.
 The random number library provides classes that generate random and pseudo-random numbers. These classes include:
+Uniform random bit generators (URBGs), which include both random number engines, which are pseudo-random number generators that generate integer sequences with a uniform distribution, and true random number generators if available;
+Random number distributions (e.g. uniform, normal, or poisson distributions) which convert the output of URBGs into various statistical distributions.URBGs and distributions are designed to be used together to produce random values. All of the random number engines may be specifically seeded, serialized, and deserialized for use with repeatable simulators. 
 
-    Uniform random bit generators (URBGs), which include both random number engines, which are pseudo-random number generators that generate integer sequences with a uniform distribution, and true random number generators if available;
-    Random number distributions (e.g. uniform, normal, or poisson distributions) which convert the output of URBGs into various statistical distributions 
-
-URBGs and distributions are designed to be used together to produce random values. All of the random number engines may be specifically seeded, serialized, and deserialized for use with repeatable simulators. 
-
-Example :
+     Example :
+     
 #include <iostream>
+    
 #include <iomanip>
+    
 #include <string>
+    
 #include <map>
 #include <random>
 #include <cmath>
